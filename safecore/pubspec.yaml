@@ -39,6 +39,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+    flutter_native_splash: ^2.4.6
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -56,10 +57,12 @@ flutter:
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
+  assets:
+  - assets/images/logoo_mon.jpg
+
   uses-material-design: true
 
-assets:
-  - assets/images/
+
   # To add assets from package dependencies, see
   # https://flutter.dev/to/asset-from-package
   #   - images/a_dot_burr.jpeg
