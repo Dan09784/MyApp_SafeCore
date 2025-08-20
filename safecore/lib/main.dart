@@ -1,25 +1,18 @@
 import 'package:flutter/material.dart';
-import 'dart:async';
+import 'package:safecore/pages/home/home.dart';
 
 void main() {
-  runApp(const SafeCoreAdminApp());
+  runApp(MyWidget());
 }
-
-/// Widget racine
-class SafeCoreAdminApp extends StatelessWidget {
-  const SafeCoreAdminApp({Key? key}) : super(key: key);
+class MyWidget extends StatelessWidget {
+  const MyWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'SafeCore Admin',
+    return const MaterialApp(
+      title: "Game Store",
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        // thème principal : clair + accent orange
-        primarySwatch: Colors.deepOrange,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: const  SafeCoreAdminApp(),
+      home: Homepage(),
     );
   }
 }
